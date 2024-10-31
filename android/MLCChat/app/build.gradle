@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'ai.mlc.mlcchat'
-    compileSdk 35
+    namespace 'ai.luxai.reggaellm'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "ai.mlc.mlcchat"
+        applicationId "ai.luxai.reggaellm"
         minSdk 26
         targetSdk 33
         versionCode 1
@@ -35,6 +35,7 @@ android {
     }
     buildFeatures {
         compose true
+        mlModelBinding true
     }
     composeOptions {
         kotlinCompilerExtensionVersion '1.4.3'
@@ -62,7 +63,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.navigation:navigation-compose:2.5.3'
     implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'org.tensorflow:tensorflow-lite-task-text:0.4.0'
     implementation fileTree(dir: 'src/main/libs', include: ['*.aar', '*.jar'], exclude: [])
+    //implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
+    implementation 'org.apache.commons:commons-csv:1.11.0'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

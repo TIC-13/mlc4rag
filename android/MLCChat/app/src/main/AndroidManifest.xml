@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="ai.mlc.mlcchat">
+    package="ai.luxai.reggaellm">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
@@ -13,11 +13,11 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/mlc_logo_108"
+        android:icon="@mipmap/reggaellm_logo"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/mlc_logo_108"
+        android:roundIcon="@mipmap/reggaellm_logo_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MLCChat"
+        android:theme="@style/Theme.ReggaeLLM"
         tools:targetApi="31">
         <uses-native-library
             android:name="libOpenCL.so"
